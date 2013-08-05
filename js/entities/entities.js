@@ -191,7 +191,7 @@ game.MoleManager = me.ObjectEntity.extend(
 
 		this.socket();
 
- 		return false;
+ 		return true;
 	},
 
 	socket : function () 
