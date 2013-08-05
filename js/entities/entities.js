@@ -216,8 +216,8 @@ game.MoleManager = me.ObjectEntity.extend(
 			    mouseCount++;
 			}
 			
-			me.input.mouse.pos.x = data.x;
-			me.input.mouse.pos.y = data.y;
+			// me.input.mouse.pos.x = data.x;
+			// me.input.mouse.pos.y = data.y;
 
 			// Saving the current client state
 			clients[data.id] = data;
