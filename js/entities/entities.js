@@ -234,22 +234,20 @@ game.otherMouse = me.AnimationSheet.extend({
 		this.id = id;
 		this.addAnimation("particle", [0]);
         this.setCurrentAnimation("particle");
-        console.log(this)
 	},
 
 	update : function() {
 
 		var self = this;
-
 		
 		socket.on('moving', function (data) 
 		{	
 			// If not client's own data
-			if (data.id == self.id)
-			{
+			// if (data.id == self.id)
+			// {
 				self.pos.x = data.x
 				self.pos.y = data.y
-			}
+			// }
 		});
 
         self.parent(); 
